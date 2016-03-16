@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Карач С.В.: Канбан в страховой компании. Конференция ИТ в страховании. 2016, март</title>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="shower/themes/ribbon/styles/screen-16x10.css">
+	
+	<style>
+			#labelNoKanBanBoard,
+			#labelPrezde,
+			#labelStart,
+			#labelWillItHelps,
+			#labelResults
+			{
+				background:#00539f;
+			}
+			#labelNoKanBanBoard h2,
+			#labelPrezde h2,
+			#labelStart h2,
+			#labelWillItHelps h2,
+			#labelResults h2
+			{
+				color:#fff;
+			}			
+			#persistencia {
+				background:#000;
+			}
+			
+	</style>
+	
+	
+</head>
+<body class="shower list">
+	<header class="caption">
+		<h1>
+		
+		Канбан в страховой компании: как сделать маленькую революцию и обогнать себя
+		
+		</h1>
+		<p>Карач С.В., @sergk </p>
+	</header>
+	
+	<!-- Югория ЛОГО -->
+	<section class="slide" id="">
+		<img src="pictures/logo.png" alt="" class="cover">
+	</section>	
+	
+	<!-- Ковер. -->
+	<section class="slide" id="cover">
+		<h2>Канбан 
+		<br>в страховой компании:
+		<br>как сделать маленькую революцию и обогнать себя</h2>
+		<p> 
+				Сергей Карач,
+			
+			<br>Директор по информационным технологиям,
+			<br>заместитель генерального директора.
+		</p>
+		<img src="pictures/21335-clouds-and-blue-sky-1920x1200-digital-art-wallpaper.jpg" alt="" class="cover">
+		<!--
+			To apply styles to the certain slides
+			set slide ID to get needed elements
+			-->
+			<style>
+				#cover h2 {
+					margin:30px 0 0;
+					color:#FFF;
+					text-align:left;
+					font-size:70px;
+					}
+				#cover p {
+					margin: 50px 0 0;
+					text-align:left;
+					color:#FFF;
+					font-style:italic;
+					font-size:20px;
+					}
+					#cover p a {
+						color:#FFF;
+						}
+			</style>
+	</section>
+	
+
+	<!-- Твиттер -->
+	<section class="slide" id="twitter"><div>
+		<h3>Что бы получить презентацию, вы можете 
+		<br>подписаться на твиттер:</h3>
+		<h3 class="shout shrink">
+			<img src="pictures/TwitterLogo.png" alt="Twitter logo">
+			<a href="https://twitter.com/sergk">@sergk</a>
+		</h3>
+		<style>
+				#twitter img {
+					width:	55px;
+					height:	55px;
+					}
+				#twitter a {
+					font-size: 55px;
+				}
+		</style>
+	</div></section>
+
+
+	<!-- Не буду говорить о канбан доске --> 
+	<section class="slide" id="labelNoKanBanBoard"  data-timing="3"><div>
+		<h2 class="shout">О чем мы не будем говорить?</h2>
+	</div></section>	
+	
+	<!-- Презентация в которой не будет рассказано о: --> 
+	<section class="slide"  data-timing="10"><div>
+		<h2>Мы не будем говорить о следующем:</h2>
+		<ul >	
+				<li>Об ограничении кол-ва задач (WIP)</li>
+				<li>О таких параметрах, как Lead Time</li>		
+				<li>Cycle Time и др.</li>
+				<li>О визуализации производства (смотреть на модные карточки канбан).</li>
+				<li>например, такие...</li>
+		</ul>
+	</div></section>
+
+	<!-- kanban board  -->
+	<section class="slide" id="">
+		<img src="pictures/kanban-doska.png" alt="" class="cover">
+	</section>	
+
+	<!-- О чем мы будем говорить: --> 
+	<section class="slide"><div>
+		<h2>О чем мы будем говорить:</h2>
+		<ul >	
+				<li>Как Югории удалось за 1 год централизовать основные процессы</li>
+				<li>Какие подходы мы применяли в планировании</li>
+				<li>Можно ли использовать математику в управлении разработкой ПО</li>
+				<li>Какие правила из теории ограничений мы применяли, и как нам это помогло...</li>
+		</ul>
+		<p>Реальные примеры и цифры.</p>
+	</div></section>
+	
+	<!-- Прежде чем начнем -->
+	<section class="slide" id="labelPrezde"  data-timing="3"><div>
+		<h2 class="shout">Прежде чем двигаться дальше</h2>
+	</div></section>	
+	
+	<!-- Новый взгляд на страховое производство: --> 
+	<section class="slide"><div>
+		<h2>Новый взгляд на производство страховых услуг:</h2>
+		<ul>	
+				<li>Современная страховая компания - это ИТ-компания.</li>
+				<li>Производство ценности: станки + рабочие = непрерывный поток.</li>
+				<li>Из чего состоит ценность?
+					<ul>
+						<li>Концепции сервиса недостаточно</li>
+						<li>Сервис + секретный ингредиент.</li>
+					</ul>
+				</li>
+		</ul>
+		<p>В конце презентации ответ на вопрос о секретном ингредиенте...</p>
+	</div></section>
+
+	
+	<!-- START  -->
+	<section class="slide" id="labelStart"  data-timing="3"><div>
+		<h2 class="shout">Итак, начинаем...</h2>
+	</div></section>	
+	
+	
+	<!-- Инструмент #1. Культура производства. -->
+	<section class="slide"  data-timing="5"><div>
+		<h3>Инструмент #1.</h3>
+		<h2 class="shout shrink">
+		Культура производства
+		</h2>
+	</div></section>	
+
+
+	<!-- Стадии внедрения  --> 
+	<section class="slide"><div>
+		<h2>Стадии внедрения</h2>
+		<ul>	
+				<li>Стадия №1. Переключение (подчинение). 
+				Делаем точно по книге и как сказал эксперт.
+				</li>
+				
+				<li>Стадия №2. Адаптация к контексту.
+					<ul>
+						<li>Адаптируем методику под свой контекст.</li>
+						<li>Глубокое понимания методологии и принципов.</li>
+					</ul>
+				</li>
+				<li>Стадия №3. Мудрость.
+					<ul>
+						<li>Создаем новое понимание, идею.</li>
+						<li>Переходим на новую ступень и отделяемся от заданного учения.</li>
+					</ul>
+				</li>
+		</ul>
+	</div></section>
+
+	
+	<!-- Принципы  --> 
+	<section class="slide"><div>
+		<h2>Принципы новой культуры</h2>
+		<ul>	
+				<li>Минимально работающий продукт.
+				</li>
+				<li>Частые изменения.
+				</li>
+				<li>Личные коммуникации.
+				</li>
+				<li>Видеть все своими глазами.
+				</li>
+				<li>Безопасность для участников проекта.
+				</li>
+		</ul>
+	</div></section>
+
+	
+	<!-- Пример  -->
+	<section class="slide"  data-timing="5"><div>
+		<h2 class="shout shrink">Пример:</h2>
+	</div></section>	
+
+
+	<!-- Как мы внедряли новую культуру производства:  --> 
+	<section class="slide"><div>
+		<h2>Как мы внедряли новую культуру производства:</h2>
+		<ul>	
+				<li>с 3 кв. 2013 по 3 кв. 2014 г.
+					<ul>
+						<li>Фаза переключения (подчинения).</li>
+						<li>Работает одна группа.</li>
+						<li>История успеха и признание в компании.</li>
+						<li>Личное участие и личный пример топ-руководителей.</li>
+					</ul>
+				</li>
+		</ul>
+		<p>...</p>
+	</div></section>
+
+	
+	<!-- Как мы внедряли новую культуру производства:  2/3 --> 	
+	<section class="slide"><div>
+		<h2>Как мы внедряли новую культуру производства:</h2>
+		<ul>	
+				<li>В конце 2014 года:
+					<ul>
+						<li>Начало фазы адаптации.</li>
+						<li>Вовлечение компании в процесс (КФГ).</li>
+						<li>Переход от scrum к философии канбан.</li>
+					</ul>				
+				</li>
+		</ul>
+		<p>...</p>
+	</div></section>
+	
+	<!-- Как мы внедряли новую культуру производства:  3/3 --> 	
+	<section class="slide"><div>
+		<h2>Как мы внедряли новую культуру производства:</h2>
+		<ul>	
+				<li>Сегодня:
+					<ul>
+						<li>Работает две макро-КФГ и набор маленьких КФГ.</li>
+						<li>Осуществляется ретроспектива на нескольких уровнях.</li>
+						<li>Непрерывное улучшение.</li>
+					</ul>				
+				</li>
+		</ul>
+	</div></section>
+	
+
+
+	<!-- Инструмент №2. Метод 5-ти яблок. -->
+	<section class="slide"  data-timing="5"><div>
+		<h3>Инструмент #2.</h3>
+		<h2 class="shout shrink">
+		Метод пяти яблок
+		</h2>
+	</div></section>	
+	
+	<!-- Яблоки -->
+	<section class="slide" data-timing="0:8">
+		<img src="pictures/11383-a-bowl-full-of-red-empire-apples-pv.jpg" alt="" class="cover">
+	</section>	
+
+	<!-- Суть метода -->
+	<section class="slide">
+		<h2>Суть метода пяти яблок</h2>
+		<figure>
+			<blockquote>
+				<p>
+				 <b>
+				 Количество объектов внимания (управления)</b> 
+				 для обычного человека 
+				 <br><b>не может превышать пяти единиц</b>
+				 при значительном объеме интеллектуальной нагрузки, 
+				 которая сопровождается
+				 не стандартными и быстро меняющимися условиями.
+				 Количество объектов управления является условной константой.
+				</p>
+			</blockquote>
+			<figcaption>(с) Карач Сергей</figcaption>
+		</figure>
+	</section>	
+	
+	<!-- У кого сколько яблок? -->	
+	<section class="slide"><div>
+		<h2>У кого сколько яблок?</h2>
+		<ul >	
+			<li>У вашего подчиненного?</li>
+			<li>А у руководителя? ...</li>
+		</ul>
+	</div></section>	
+
+	<!-- А у руководителя?  -->	
+	<section class="slide" data-timing="0:8">
+		<p> 
+			У вашего руководителя 
+			мощность ограничена: 
+			<br>
+			у него всего - "3 яблока". 
+		</p>
+		<img src="pictures/16104-a-bowl-of-green-granny-smith-apples-pv-m.jpg" alt="" class="cover">
+	</section>	
+
+	<!-- Пример  -->
+	<section class="slide"  data-timing="3"><div>
+		<h2 class="shout shrink">Пример:</h2>
+	</div></section>	
+
+	
+	<!-- Как применить: -->
+	<section class="slide"><div>
+		<h2>Как применить правило пяти яблок?</h2>
+		<ul >	
+			<li>Как выглядит план по методу пяти яблок?</li>
+			<li  class="next">Как можно снизить потери на коммуникациях?</li>
+			<li  class="next">Можем ли мы решить противоречие планирования: тактика против стратегии?</li>
+		</ul>
+		<p>...</p>
+	</div></section>		
+
+	<!-- Противоречие между стратегией и тактикой -->	
+	<section class="slide" id="groza">
+		<p> 
+			Противоречие между тактическим и стратегическим планированием.
+			(Нотация "Грозовые тучи". Э.Голдратт)
+		</p>
+		<img src="pictures/tactic-vs-strategy.png" alt="" class="cover">
+			<style>
+				#groza p {
+					
+					text-align:bottom;
+					color:#000;
+					font-style:italic;
+					font-size:20px;
+					}
+
+			</style>		
+	</section>		
+
+
+	<!-- Инструмент №3. Как нам помогла теория ограничений? -->
+	<section class="slide"  data-timing="5"><div>
+		<h3>Инструмент #3.</h3>
+		<h2 class="shout shrink">
+		Некоторые принципы ТО.
+		</h2>
+	</div></section>	
+
+	<!-- Нельзя воплощать все инициативы 1/2 -->	
+	<section class="slide"><div>
+		<h2>Нельзя воплощать все инициативы:</h2>
+		<ul >	
+			<li>Причина №1. Вы начнете устранять НЯ.
+				<ul>
+					<li>Устранение нежелательных явлений - дает ложное чувство прогресса.</li>
+					<li class="next">Важно найти ключевую проблему.</li>
+					<li class="next">Чаще всего - ограничение системы - организационные, не технические.</li>
+					<li class="next">Чаще всего - конкретный департамент классической СК (заказчик) - оптимизирует себя.</li>
+					<li class="next">Возникает конфликт между целями подсистемы и системы.</li>
+				</ul>			
+			</li>
+		</ul>
+	</div></section>	
+
+
+	<!-- Нельзя воплощать все инициативы 2/2-->	
+	<section class="slide"><div>
+		<h2>Нельзя воплощать все инициативы:</h2>
+		<ul >	
+			<li>Причина №2. Вы сделаете лишнюю работу.
+				<ul>
+					<li>ПРИМЕР:Для горнолыжного курорта не нужно строить трассы высокой сложности. Более 80% клиентов - средние и начинающие лыжники.</li>
+					<li class="next">Вывод: ваш продукт должен делать важные и простые вещи.</li>
+				</ul>			
+			</li>
+		</ul>
+	</div></section>	
+
+	
+	<!-- Пример  -->
+	<section class="slide"  data-timing="3"><div>
+		<h2 class="shout shrink">Пример:</h2>
+	</div></section>	
+
+	<!-- Пересмотр КП -->	
+	<section class="slide"><div>
+		<h2>Непрерывный поиск КП:</h2>
+		<ul >	
+			<li>Кризис - это хорошо.</li>
+			<li> 
+			Например, при внедрении новой учетной 
+			системы таких кризисов и пересмотров КП за 1 год было 3.
+			</li>
+		</ul>
+	</div></section>	
+
+	
+	<!-- Инструмент №4.  Как мы управляем продуктом и планами -->
+	<section class="slide"  data-timing="5"><div>
+		<h3>Инструмент #4.</h3>
+		<h2 class="shout shrink">
+		Планирование и продукты
+		</h2>
+	</div></section>		
+	
+	<!-- Пересмотр КП -->	
+	<section class="slide"><div>
+		<h2>Принципы:</h2>
+		<ul >	
+			<li>Непрерывное планирование.</li>
+			<li>Концепция минимально работающего продукта.</li>		
+			<li>Разделение PBL на два списка: основной и оперативный (Short PBL-2мес)</li>
+			<li>Назначаем ли мы сроки команде?</li>
+		</ul>
+	</div></section>	
+
+	<!-- Пример  -->
+	<section class="slide"  data-timing="5"><div>
+		<h2 class="shout shrink">Пример:</h2>
+	</div></section>	
+
+	
+	<section class="slide" id="upro">
+	 <h2>Команда способна разработать и опубликовать 
+	 11-12 историй за одну календарную неделю.
+	 <br>
+	 <br>
+	 (На примере команды разработчиков Единой фронт-офисной системы 
+	 в ГСК Югория.)
+	 </h2>
+		<img src="pictures/u-pro.png" alt="" class="cover">
+					<style>
+						#upro h2 {
+							margin:30px 0 0 250px;
+							text-align:left;
+							font-size:20px;
+						}
+					</style>
+	</section>		
+	
+
+	<section class="slide" id="raspred">
+	 <h1>Распределение вероятностей дискретной случайной величины:
+	 </h1>
+		<img src="pictures/primer_terver9_clip_image012.gif" alt="" class="cover">
+					<style>
+				#raspred h2 {
+					
+					text-align:left;
+					font-size:20px;
+					}
+			</style>
+	</section>		
+	<section class="slide" id="raspred2">
+	 <h1>Распределение вероятностей дискретной случайной величины:
+	 </h1>
+	 <h2>Математическое ожидание и дисперсия (степень разброса)</h2>
+		<img src="pictures/primer_terver9_clip_image012-2.jpg" alt="" class="cover">
+					<style>
+				#raspred2 h2 {
+					
+					text-align:left;
+					font-size:20px;
+					}
+			</style>
+	</section>	
+
+	<section class="slide"><div>
+		<h2>Как улучшить производство и планирование?</h2>
+		<ul >	
+			<li class="next">Ответ один: сокращайте дисперсию.</li>
+		</ul>
+	</div></section>		
+	
+	
+	<section class="slide" id="labelWillItHelps"  data-timing="5"><div>
+		<h2 class="shout shrink">Помогут ли нам эти инструменты?</h2>
+	</div></section>
+
+	
+	<section class="slide"  data-timing="5"><div>
+		<h2 class="shout shrink">Нет</h2>
+	</div></section>	
+	
+		
+	<section class="slide"><div>
+		<h2>
+		Если, конечно, мы не вспомним о людях.
+		</h2>
+		<ol>
+			<li>Хороший проект или продукт - означает правильное 
+			управление рисками, 
+			ресурсами, временем.</li>
+			<li>Но кто это все делает?</li>
+			<li>Люди.</li>
+			<li class="next">Следует говорить о двух производственных системах:
+				<ol>
+					<li>Направленной на продукт.</li>
+					<li class="next">И направленной на выращивание людей.</li>
+				</ol>
+			</li>
+		</ol>		
+	</div></section>			
+
+	<!-- Инструмент №5.  Поток создания ценности сотрудника  -->
+	<section class="slide"  data-timing="5"><div>
+		<h3>Инструмент #5.</h3>
+		<h3>Поток создания </h3>
+		<h2 class="shout shrink">
+		ценности сотрудника
+		</h2>
+	</div></section>		
+	
+	<section class="slide"><div>
+		<h2>Поток создания ценности сотрудника.</h2>
+		<ol>
+			<li>Общие для всей компании принципы, набор ценностей.</li>
+			<li class="next">Мыслить в долгосрочной перспективе.</li>
+			<li class="next">Налаживать традицию непрерывного обучения на рабочем месте опытными наставниками.</li>
+			<li class="next">Интенсивная коммуникация внутри рабочих групп при активном участии руководства компании.</li>
+			<li class="next">Нацеленность на выявление и решение проблем. (цикл Деминга)</li>
+			<li class="next">Атмосфера доверия.</li>
+		</ol>
+	</div></section>		
+
+
+	<!-- ИТОГИ  -->
+	<section class="slide" id="labelResults"  data-timing="5"><div>
+		<h2 class="shout shrink">Результат</h2>
+	</div></section>
+
+	<!-- Итоги ТСО -->
+	<section class="slide" ><div>
+		<h3>Собственная ИТ платформа:
+		</h3>
+		<ul>
+			<li>Мы последоватлеьно создаем собственную ИТ-платформу.</li>
+			<li>С собственными API и модульной, слабосвязанной архитектурой.</li>
+			<li>Наше производство становится технологичным.</li>
+		</ul>
+	</div></section>					
+	
+	
+	<!-- ИТОГИ  RGT -->
+	<section class="slide"  data-timing="10"><div>
+		<h3>Доля трудозатрат на развитие и трансформацию:</h3>
+		<img src="pictures/RGT-2015.png" alt="" class="cover">
+	</div></section>			
+
+	<!-- Итоги ТСО -->
+	<section class="slide" ><div>
+		<h3>Эксплуатационные подразделения:
+		</h3>
+		<ul>
+			<li>Увеличили свою производительность на 40% (с 10% до 50-60%)</li>
+			<li>Сократили инфраструктуру и TCO примерно на 50%.</li>
+			<li>Непрерывно наращивают долю Grow и Transform</li>
+		</ul>
+	</div></section>							
+	
+	
+	<!-- Итоги НПС -->
+	<section class="slide"  data-timing=10"><div>
+		<img src="pictures/NPS-2015.png" alt="" class="cover">
+		<p>
+		Мы начинали 
+		<br>в середине 2014 года 
+		<br>с отметки в 17%.</p>
+	</div></section>			
+
+	
+	<!-- Итоги РБК -->
+	<section class="slide" ><div>
+		<h3>«Югория» признана лидером по качеству урегулирования 
+			убытков 
+			по результатам исследования, проведенного информагентством РБК.
+		</h3>
+		<img src="pictures/RBK.png" alt="" class="cover">
+	</div></section>					
+
+	
+	<!-- Итоги - релизы -->
+	<section class="slide" ><div>
+		<h3>Увеличилось кол-во выпускаемых релизов.
+		</h3>
+		<h3>Мы выпускаем релиз практически ежедневно (по рабочим дням). В год - 150 релизов.
+		</h3>		
+		<h3 class="shout shrink">в 15-17 раз.</h3>
+	</div></section>						
+	
+	<!-- Итоги  time to market -->
+	<section class="slide" ><div>
+		<h3>Сократилось время time-to-market:
+		</h3>
+		<h3>Речь идет о принципиально новых скоростях вывода продуктов на рынок
+		</h3>		
+		<h3 class="shout shrink">в 10тки раз.</h3>
+	</div></section>						
+
+
+	
+	<!-- Резюме  -->
+	<section class="slide"><div>
+		<h2>Резюме:</h2>
+		<ol>
+			<li>Инвестируйте в людей.</li>
+			<li class="next">Непрерывно планируйте.</li>
+			<li class="next">Непрерывно улучшайте.</li>
+			<li class="next">Руководствуйтесь философией долгосрочной перспективы.</li>
+			<li class="next">Не перегружайте сознание и коммуникации.</li>
+			<li class="next">Используйте математику.</li>
+		</ol>
+	</div></section>	
+
+	<!-- ВОпросы? -->
+	<section class="slide" id="thefin"><div>
+		<h2>Пожалуйста, вопросы?</h2>
+
+		<p>
+		Канбан в страховой компании: как сделать маленькую революцию и обогнать себя
+		</p>
+		<p class="small note">
+					Сергей Карач,
+				<br>Директор по ИТ, заместитель генерального директора 
+				<br><img src="pictures/logo.png" alt="ugsk.ru"> 
+				<br> 
+				twitter: <a href="https://twitter.com/sergk">@sergk</a> 
+				
+		</p>
+		<style>
+				#thefin img {
+					width:	130px;
+					height:	40px;
+					}
+				}
+		</style>
+	</div></section>	
+
+
+	
+	<!--
+		To hide progress bar from entire presentation
+		just remove “progress” element.
+		-->
+	<div class="progress"></div>
+	<script src="shower/shower.min.js"></script>
+	<!-- Copyright © 2016 Карач Сергей. ГСК Югория -->
+</body>
+</html>
